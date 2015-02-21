@@ -8,3 +8,6 @@ DATABASES = {
         'HOST': 'localhost'
     }
 }
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = 'get it from google'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'get it from google'
