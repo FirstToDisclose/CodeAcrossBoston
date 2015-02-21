@@ -1,4 +1,15 @@
-# CodeAcrossBoston
+# Overview
+
+This project is about enabling idea flow by making it easy to disclose, find, use and improve innovations.  
+
+This project is intended to enable people to publicly share their inventions without risking that another person will later get a patent that excludes open, public free use of the invention.  But the basic idea can also work very well for sharing other types of inventions and other innovations that are less heavy-weight than a patent-track invention but are also valuable and important.  For instance, groups like Code for America and university researchers can use this service to disclose and share open source projects in  way that can be discovered and used and improved by others.  
+
+By leveraging OAuth 2 and innovative identity protocols like OpenID Connect this project also aims to make the experience of sharing information simplified and streamlined.  For instance, people can more quickly agree to relevant terms and conditions without needing to enter their names and emails again so long as they have an active session.  These "federated" approaches also easily enable users to authorize access to protected resources as part of their disclosures such as files in their dropbox accounts, or evernote or other districtured apps and services.  Most important, these approaches promote sharing of ideas and other data by ensuring clear and definitie and continuous user-centred permission management.  
+
+
+# Technical Read Me Information
+
+## CodeAcrossBoston
 
 Make sure you have fabric and vagrant installed
 
