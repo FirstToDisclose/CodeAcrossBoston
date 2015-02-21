@@ -102,7 +102,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-try:
-    from local_settings import *
-except e:
-    print e
+from local_settings import *
