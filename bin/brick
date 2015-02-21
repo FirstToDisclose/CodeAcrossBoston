@@ -1,0 +1,6 @@
+#!/bin/sh
+
+PORT=8001
+python -m SimpleHTTPServer ${PORT}
+
+open http://localhost:${PORT}/
