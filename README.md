@@ -1,9 +1,32 @@
 # CodeAcrossBoston
 
-Getting started:
+Make sure you have fabric and vagrant installed
 
-$ virtualenv env
+```
+# Get the vagrant installer online
+sudo pip install fabric
+```
 
-$ source env/bin/activate
+Then get going with:
 
-(env)$ pip install -r requirements.txt
+```
+# Install local settings for vagrant
+cp firsttodisclose/firsttodisclose/local_settings.py.example firsttodisclose/firsttodisclose/local_settings.py
+
+vagrant up
+fab vagrant venv
+fab vagrant manage:migrate
+fab vagrant manage:createsuperuser
+```
+
+You can see the app running using the "server" fabric task:
+
+```
+fab vagrant server
+```
+
+In another window terminal you can launch the admin app with:
+
+```
+fab admin
+```
