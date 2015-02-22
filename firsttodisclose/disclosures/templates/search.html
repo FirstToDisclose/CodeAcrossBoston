@@ -7,7 +7,7 @@ active
 {% endblock %}
 
 {% block body %}
-<form method="GET">
+<form method="GET" id="searchForm">
   <div>
     <input type="text" placeholder="Search" name="q" value="{{ query }}">
     <input type="submit"></input>
@@ -15,10 +15,10 @@ active
 </form>
 
 {% if query %}
-<table class="table">
+<table class="table table-hover">
   <thead>
     <tr>
-      <th>ID</th>
+      <!-- <th>ID</th> -->
       <th>Title</th>
       <th>Created By</th>
       <th>Created On</th>
