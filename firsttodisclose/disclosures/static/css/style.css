@@ -3,13 +3,13 @@ Landing Page
 */
 
 body {
-	background-color: #90E6FF;
+        background-color: #90E6FF;
 }
 
 #mainLogo {
-	margin: 20px auto;
-	width: 250px;
-	display: block;
+        margin: 20px auto;
+        width: 250px;
+        display: block;
 }
 
 .paragraphText {
@@ -52,12 +52,13 @@ form {
 }
 
 form input {
-	margin: 10px 0;
+        margin: 10px 0;
 }
 
 form textarea {
-	width: 320px;
+        width: 320px;
 }
+
 
 
 #discoverButton, #discloseButton, #submit, #login{
@@ -91,4 +92,16 @@ h5.buttonDescription {
 	text-align: center;
 	display: block;
 	margin: 10px auto;
+}
+form button {
+        margin: 0 auto;
+        display: block;
+}
+
+.red {
+    color: #ff0000
+}
+
+body {
+    margin: 10px;
 }

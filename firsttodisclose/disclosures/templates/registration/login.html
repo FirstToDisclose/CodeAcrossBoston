@@ -1,8 +1,9 @@
-<html>
-  <head>
-    <title>Login</title>
-  </head>
-  <body>
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block body %}
+
     <div>
       <h1>Login with a ID provider</h1>
       <p>
@@ -28,4 +29,5 @@
         </ul>
       </p>
     </div>
-               </body>
+
+{% endblock %}
