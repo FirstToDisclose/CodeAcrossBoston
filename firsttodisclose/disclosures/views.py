@@ -24,6 +24,11 @@ def search(request):
                                             Q(body__icontains=query))
 
         context['results'] = results
+    else:
+        results = Disclosure.objects.all().order_by('-created')[:10]
+
+        context['results'] = results
+
 
 
     return render_to_response("search.html", context, RequestContext(request))
