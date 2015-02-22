@@ -1,1 +1,1 @@
-wed: sh -c 'cd ./firsttodisclose && exec gunicorn firsttodisclose.wsgi --log-file -'
+web: sh -c 'cd ./firsttodisclose && exec gunicorn firsttodisclose.wsgi --log-file -'
