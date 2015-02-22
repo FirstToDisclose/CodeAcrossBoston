@@ -4,6 +4,20 @@
 
 {% block body %}
 
-<h1>Disclosure</h1>
+<h1 class="center">Disclosure</h1>
+
+<form id="disclosureForm">
+	<h3>Title</h3>
+	<input type="text" placeholder="Title"  class="form-control">
+	<h3>Upload Abstract</h3>
+	<input type="file" id="abstractFileUpload" class="form-control">
+	<h4 class="orLabel">OR</h4>
+	<textarea placeholder="You can enter your abstract here." class="form-control"></textarea>
+	<h3>Upload Body of Disclosure</h3>
+	<input type="file" id="bodyFileUpload">
+	<h4 class="orLabel">OR</h4>
+	<textarea placeholder="You can enter the body of your disclosure here." class="form-control"></textarea>
+	<button type="submit" id="submitDisclosure" class="btn btn-primary">Submit</button>
+</form>
 
 {% endblock %}
