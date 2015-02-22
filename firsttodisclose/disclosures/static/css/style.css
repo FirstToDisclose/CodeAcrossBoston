@@ -109,3 +109,17 @@ body {
 .center {
     text-align: center;
 }
+
+h4.orLabel {
+	display: inherit;
+	text-align: center;
+}
+
+#submitDisclosure {
+	margin: 20px auto;
+	display: block;
+}
+
+#disclosureForm {
+	margin: 0 auto;
+}
