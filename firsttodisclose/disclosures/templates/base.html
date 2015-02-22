@@ -17,6 +17,7 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="{% block active_home %}{% endblock %}"><a href="/">Home</a></li>
+              <li class="{% block active_browse %}{% endblock %}"><a href="/">Browse</a></li>
               <li class="{% block active_submit %}{% endblock %}"><a href="{% url 'disclosure' %}">Submit a Disclosure</a></li>
               <li class="{% block active_search %}{% endblock %}"><a href="{% url 'search' %}">Search</a></li>
               <li class="{% block active_faq %}{% endblock %}"><a href="{% url 'faq' %}">FAQ</a></li>

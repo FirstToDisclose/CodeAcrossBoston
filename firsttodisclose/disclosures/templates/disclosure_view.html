@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block active_browse %}
+active
+{% endblock %}
+
+{% block body %}
+<table class="table">
+  <tr><td>Title</td><td>{{ disclosure.title }}</td></tr>
+  <tr><td>Created By</td><td>{{ disclosure.owner.username }}</td></tr>
+  <tr><td>Created On</td><td>{{ disclosure.created }}</td></tr>
+  <tr><td>Abstract</td><td>{{ disclosure.abstract }}</td></tr>
+</table>
+
+{% endblock %}

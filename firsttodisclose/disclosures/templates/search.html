@@ -27,9 +27,9 @@ active
 {% if results %}
   {% for result in results %}
   <tr>
-    <!-- <td>
-      {{ result.id }}
-    </td> -->
+    <td>
+      <a href="/disclosure/{{ result.id }}">{{ result.id }}</a>
+    </td>
     <td>
       {{ result.title }}
     </td>
