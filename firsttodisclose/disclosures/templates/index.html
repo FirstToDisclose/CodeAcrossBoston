@@ -12,7 +12,26 @@
 	<body>
 
 		<img src="{% static "images/logo.png" %}" id="mainLogo">
-		<form>
+		<p class="paragraphText">FirsttoDisclose.org is a community-powered online repository for inventors to disclose their inventions to the public. The use of FirsttoDisclose.org may help prevent another person or entity from claiming patent protection on your idea. While we understand and fully support the commercialization of intellectual property in our information economy, we also applaud those who are willing to make their innovations open to the public without charge.</p>
+
+		<h5 class="buttonDescription">Show me what other people have disclosed</h5>
+		<button id="discoverButton" class="btn btn-default">Discover</button>
+		
+		<h5 class="buttonDescription">I want to share my project</h5>
+		<button id="discloseButton" class="btn btn-default">Disclose</button>
+		
+		<form id="loginForm">
+			<input type="text" placeholder="Email" class="form-control">
+			<input type="password" placeholder="Password" class="form-control">
+			<button id="login" type="submit" class="btn btn-primary" >Submit</button>
+		</form>
+		<div id="newAccountWrapper">
+			<h4 id="newAccountLabel">No Account?</h4>
+			<button id="newAccountButton" class="btn btn-default">Sign Up</button>
+		</div>
+		
+
+		<form id="createAccountForm">
 			<input type="text" placeholder="First Name" class="form-control">
 			<input type="text" placeholder="Last Name" class="form-control">
 			<input type="text" placeholder="Email" class="form-control">
@@ -21,9 +40,17 @@
 			<textarea class="form-control" placeholder="About You"></textarea >
 
 			<!--insert captcha here -->
-			<button type="submit">Submit</button>
+			<button id="submit" type="submit" class="btn btn-primary" >Submit</button>
 
 		</form>
+
+		<h1 id="disclaimerHeader">Disclaimer</h1>
+		<p class="paragraphText" id="disclaimerText">If your intention is to file a patent on your idea, use this site cautiously and consult a patent attorney. You should consult a patent attorney regarding any patent related matters including whether submitting a disclosure through FirsttoDisclose.org is appropriate for your situation. The law regarding the effect and extent of public disclosure on your ability to get a U.S. patent is unsettled. Additionally, public disclosure might bar you from obtaining a patent in certain foreign jurisdictions. FirsttoDisclose.org does not warrant or make any claims to help a user obtain a patent.</p>
+		<div id="consentWrapper">
+			<h5>By checking this box, I agree to sell my soul and first-born child.</h5>
+			<input type="checkbox" id="disclaimerCheckbox">
+		</div>
+
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script type="text/javascript" src="{% static "javascript/javascript.js" %}"></script>
