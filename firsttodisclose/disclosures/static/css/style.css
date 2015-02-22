@@ -1,3 +1,7 @@
+/*  
+Landing Page
+*/
+
 body {
         background-color: #90E6FF;
 }
@@ -8,9 +12,43 @@ body {
         display: block;
 }
 
+.paragraphText {
+	padding: 0 15px;
+	margin: 10px auto;
+	max-width: 32em;
+}
+
+#disclaimerHeader, #newAccountLabel {
+	text-align: center;
+}
+
+#disclaimerCheckbox {
+	display: inline-block;
+}
+
+#consentWrapper {
+	display: block;
+	margin: 0 auto;
+	width: 300px;
+}
+
+#disclaimerText {
+	background-color: #B63B39;
+	color: white;
+	font-size: 1.2em;
+	padding: 10px;
+}
+
+
+
+h4, h5 {
+	display: inline;
+}
+
 form {
-        max-width: 320px;
-        margin: 0 auto;
+	max-width: 320px;
+	margin: 0 auto;
+	margin-top: 200px;
 }
 
 form input {
@@ -21,6 +59,40 @@ form textarea {
         width: 320px;
 }
 
+
+
+#discoverButton, #discloseButton, #submit, #login{
+	width: 160px;
+	height: 50px;
+	margin: 0 auto;
+	display: block;
+	font-size: 2em;
+}
+
+#newAccountWrapper {
+	width: 300px;
+	display: block;
+	margin: 70px auto;
+}
+
+#newAccountLabel {
+	margin-left: 30px;
+}
+#newAccountButton {
+	margin-left: 40px;
+	display: inline-block;
+}
+
+#submit {
+	margin-top: 10px;
+}
+
+h5.buttonDescription {
+	color: #697480;
+	text-align: center;
+	display: block;
+	margin: 10px auto;
+}
 form button {
         margin: 0 auto;
         display: block;
@@ -32,4 +104,8 @@ form button {
 
 body {
     margin: 10px;
+}
+
+.center {
+    text-align: center;
 }

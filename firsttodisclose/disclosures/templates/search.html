@@ -7,17 +7,44 @@ active
 {% endblock %}
 
 {% block body %}
-    <img src="{% static "images/logo.png" %}" id="mainLogo">
-    <form>
-      <input type="text" placeholder="First Name" class="form-control">
-      <input type="text" placeholder="Last Name" class="form-control">
-      <input type="text" placeholder="Email" class="form-control">
-      <input type="text" placeholder="Confirm Email"class="form-control">
-      <input type="password" placeholder="Password" class="form-control">
-      <textarea class="form-control" placeholder="About You"></textarea >
+<form method="GET">
+  <div>
+    <input type="text" placeholder="Search" name="q" value="{{ query }}">
+    <input type="submit"></input>
+  </div>
+</form>
 
-      <!--insert captcha here -->
-      <button type="submit">Submit</button>
+{% if query %}
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Created By</th>
+      <th>Created On</th>
+    </tr>
+  </thead>
+{% if results %}
+  {% for result in results %}
+  <tr>
+    <td>
+      {{ result.id }}
+    </td>
+    <td>
+      {{ result.title }}
+    </td>
+    <td>
+      {{ result.owner.username }}
+    </td>
+    <td>
+      {{ result.created }}
+    </td>
+  </tr>
+  {% endfor %}
+{% else %}
+  <tr><td colspan="4" class="center">No Results Found</td></tr>
+{% endif %}
+</table>
+{% endif %}
 
-    </form>
 {% endblock %}
