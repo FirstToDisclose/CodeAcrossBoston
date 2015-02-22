@@ -41,3 +41,14 @@ In another window terminal you can launch the admin app with:
 ```
 fab admin
 ```
+
+# System 
+
+## Routes 
+
+- / 
+- /auth
+- /agreements
+- /disclosure 
+- /tag
+- /search
