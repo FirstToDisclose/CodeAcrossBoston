@@ -7,6 +7,30 @@
     <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
   </head>
   <body>
+    <div class="container">
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">First to Disclose</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Submit a Disclose</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              {% if user and not user.is_anonymous %}
+              <li><a href="{% url 'auth:logout' %}?next=/">{{ user.username }}</a></li>
+              <li><a href="{% url 'auth:logout' %}?next=/">Logout</a></li>
+              {% else %}
+                <li><a href="{% url 'auth:login' %}">Login</a></li>
+              {% endif %}
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+    </div>
     {% block body %}
     {% endblock %}
 
