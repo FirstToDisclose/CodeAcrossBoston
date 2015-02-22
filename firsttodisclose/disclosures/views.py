@@ -9,6 +9,11 @@ from disclosures.models import Disclosure
 def index(request):
     return render_to_response("index.html", None, RequestContext(request))
 
+def show_disclosure(request, pk):
+    disc = Disclosure.objects.get(pk=pk)
+
+    return render_to_response("disclosure_view.html", {'disclosure': disc}, RequestContext(request))
+
 def search(request):
     query = request.REQUEST.get('q', '')
 
