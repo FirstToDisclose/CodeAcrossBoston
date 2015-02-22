@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from disclosures.views import index, search
+from disclosures.views import index, search, faq
 
 from disclosures.views import agreements
 from disclosures.views import disclosure
@@ -10,16 +10,15 @@ from disclosures.views import tag
 urlpatterns = patterns('',
     url(r'^$', index),
 
-    url(r'^search$', search),
-    # url(r'^blog/', include('blog.urls')),
+    url(r'^search$', search, name='search'),
 
+    url('^faq$', faq, name='faq'),
     url('^accounts/', include('django.contrib.auth.urls', namespace='auth')),
     url(r'^admin/', include(admin.site.urls)),
 
-    url(r'^agreements/', agreements),
-    url(r'^disclosure/', disclosure),
-    url(r'^search/', search),
-    url(r'^tag/', tag),
+    url(r'^agreements/', agreements, name='agreements'),
+    url(r'^disclosure/', disclosure, name='disclosure'),
+    url(r'^tag/', tag, name='tag'),
 
     url('^accounts/', include('django.contrib.auth.urls')),
     url('', include('social.apps.django_app.urls', namespace='social'))

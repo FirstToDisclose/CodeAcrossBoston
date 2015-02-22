@@ -8,7 +8,7 @@ def index(request):
         return render_to_response("index.html", None, RequestContext(request))
 
 def search(request):
-        return render_to_response("search.html", None, RequestContext(request))
+    return render_to_response("search.html", None, RequestContext(request))
 
 def agreements(request):
         return render_to_response("agreements.html", None, RequestContext(request))
@@ -21,3 +21,6 @@ def search(request):
 
 def tag(request):
         return render_to_response("tag.html", None, RequestContext(request))
+
+def faq(request):
+    return render_to_response("faq.html", None, RequestContext(request))
