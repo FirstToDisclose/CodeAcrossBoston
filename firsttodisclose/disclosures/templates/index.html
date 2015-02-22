@@ -41,6 +41,13 @@ active
 
 {% block body %}
     <img src="{% static "images/logo.png" %}" id="mainLogo">
+    <h1 id="disclaimerHeader">Disclaimer</h1>
+		<p class="paragraphText" id="disclaimerText">If your intention is to file a patent on your idea, use this site cautiously and consult a patent attorney. You should consult a patent attorney regarding any patent related matters including whether submitting a disclosure through FirsttoDisclose.org is appropriate for your situation. The law regarding the effect and extent of public disclosure on your ability to get a U.S. patent is unsettled. Additionally, public disclosure might bar you from obtaining a patent in certain foreign jurisdictions. FirsttoDisclose.org does not warrant or make any claims to help a user obtain a patent.</p>
+    <h5 class="buttonDescription">Show me what other people have disclosed</h5>
+		<button id="discoverButton" class="btn btn-default">Discover</button>
+		
+		<h5 class="buttonDescription">I want to share my project</h5>
+		<button id="discloseButton" class="btn btn-default">Disclose</button>
     
 {% endblock %}
 
