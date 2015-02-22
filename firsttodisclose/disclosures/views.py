@@ -9,3 +9,6 @@ def index(request):
 
 def search(request):
     return render_to_response("index.html", None, RequestContext(request))
+
+def faq(request):
+    return render_to_response("faq.html", None, RequestContext(request))

@@ -1,27 +1,31 @@
 body {
-	background-color: #90E6FF;
+        background-color: #90E6FF;
 }
 
 #mainLogo {
-	margin: 20px auto;
-	width: 250px;
-	display: block;
+        margin: 20px auto;
+        width: 250px;
+        display: block;
 }
 
 form {
-	max-width: 320px;
-	margin: 0 auto;
+        max-width: 320px;
+        margin: 0 auto;
 }
 
 form input {
-	margin: 10px 0;
+        margin: 10px 0;
 }
 
 form textarea {
-	width: 320px;
+        width: 320px;
 }
 
 form button {
-	margin: 0 auto;
-	display: block;
+        margin: 0 auto;
+        display: block;
+}
+
+.red {
+    color: #ff0000
 }
