@@ -7,10 +7,10 @@ from django.shortcuts import get_object_or_404, render_to_response
 from disclosures.models import Disclosure
 
 def index(request):
-        return render_to_response("index.html", None, RequestContext(request))
+    return render_to_response("index.html", None, RequestContext(request))
 
 def search(request):
-    query = request.REQUEST['q']
+    query = request.REQUEST.get('q', None)
 
     context = {'query': query}
     if query:
