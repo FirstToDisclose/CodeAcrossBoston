@@ -52,3 +52,10 @@ fab admin
 - /disclosure 
 - /tag
 - /search
+
+## Developement 
+
+http://localhost:8123/tag/
+http://localhost:8123/search/
+http://localhost:8123/agreements/
+http://localhost:8123/disclosure/
