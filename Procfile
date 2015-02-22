@@ -1,0 +1,1 @@
+web: gunicorn firsttodisclose.wsgi --log-file -
