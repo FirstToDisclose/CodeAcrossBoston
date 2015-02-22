@@ -3,14 +3,6 @@
 {% load staticfiles %}
 
 {% block body %}
-<div>
-      {% if user and not user.is_anonymous %}
-      Welcome {{ user.username }} <a href="{% url 'auth:logout' %}?next=/">Logout</a>
-      {% else %}
-      <a href="{% url 'auth:login' %}">Login</a>
-      {% endif %}
-    </div>
-
     <img src="{% static "images/logo.png" %}" id="mainLogo">
     <form>
       <input type="text" placeholder="First Name" class="form-control">
