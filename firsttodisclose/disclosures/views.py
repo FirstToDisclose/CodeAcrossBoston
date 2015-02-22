@@ -10,7 +10,7 @@ def index(request):
     return render_to_response("index.html", None, RequestContext(request))
 
 def search(request):
-    query = request.REQUEST.get('q', None)
+    query = request.REQUEST.get('q', '')
 
     context = {'query': query}
     if query:
