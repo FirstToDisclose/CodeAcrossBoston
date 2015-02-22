@@ -29,3 +29,7 @@ form button {
 .red {
     color: #ff0000
 }
+
+body {
+    margin: 10px;
+}
