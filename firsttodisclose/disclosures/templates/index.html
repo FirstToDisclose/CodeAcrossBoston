@@ -43,8 +43,18 @@ active
 
 {% block body %}
     <img src="{% static "images/logo.png" %}" id="mainLogo">
-    <h1 id="disclaimerHeader">Disclaimer</h1>
-    <div id="disclaimerWrapper">
+    <p class="paragraphText">FirsttoDisclose.org is a community-powered online repository for inventors to disclose their inventions to the public. The use of FirsttoDisclose.org may help prevent another person or entity from claiming patent protection on your idea. While we understand and fully support the commercialization of intellectual property in our information economy, we also applaud those who are willing to make their innovations open to the public without charge.</p>
+    
+
+		
+    <h5 class="buttonDescription">Show me what other people have disclosed</h5>
+		<button id="discoverButton" class="btn btn-default">Discover</button>
+
+		<h5 class="buttonDescription">I want to share my project</h5>
+		<button id="discloseButton" class="btn btn-default">Disclose</button>
+
+		<div id="disclaimerWrapper">
+    	<h1 id="disclaimerHeader">Disclaimer</h1>
     	<p class="paragraphText disclaimerText">First to Disclose is intended for public disclosures. Public disclosures places 
 
 information in the public domain, which allows the public to freely use the 
@@ -78,11 +88,5 @@ damage that may result from your use of First to Disclose. You use this site at
 
 your own risk.</p>	
     </div>
-		
-    <h5 class="buttonDescription">Show me what other people have disclosed</h5>
-		<button id="discoverButton" class="btn btn-default">Discover</button>
-
-		<h5 class="buttonDescription">I want to share my project</h5>
-		<button id="discloseButton" class="btn btn-default">Disclose</button>
 
 {% endblock %}
