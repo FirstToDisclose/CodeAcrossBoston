@@ -32,11 +32,18 @@ body {
 	width: 300px;
 }
 
-#disclaimerText {
+.disclaimerText {
 	background-color: #B63B39;
 	color: white;
 	font-size: 1.2em;
 	padding: 10px;
+	margin: 0;
+}
+
+#disclaimerWrapper {
+	display: block;
+	margin: 0 auto;
+	max-width: 35em;
 }
 
 
@@ -115,7 +122,7 @@ h4.orLabel {
 	text-align: center;
 }
 
-#submitDisclosure {
+#submitDisclosure, #disclosureButton {
 	margin: 20px auto;
 	display: block;
 }
@@ -123,3 +130,4 @@ h4.orLabel {
 #disclosureForm {
 	margin: 0 auto;
 }
+
