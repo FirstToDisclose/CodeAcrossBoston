@@ -14,11 +14,10 @@ active
   </div>
 </form>
 
-{% if query %}
 <table class="table table-hover">
   <thead>
     <tr>
-      <!-- <th>ID</th> -->
+      <th>ID</th>
       <th>Title</th>
       <th>Created By</th>
       <th>Created On</th>
@@ -45,6 +44,5 @@ active
   <tr><td colspan="4" class="center">No Results Found</td></tr>
 {% endif %}
 </table>
-{% endif %}
 
 {% endblock %}
