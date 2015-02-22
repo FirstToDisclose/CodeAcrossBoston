@@ -40,7 +40,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='disclosure',
             name='owner',
-            field=models.ForeignKey(default=datetime.datetime(2015, 2, 21, 21, 51, 1, 405032, tzinfo=utc), to=settings.AUTH_USER_MODEL),
+            field=models.ForeignKey(default=0, to=settings.AUTH_USER_MODEL),
             preserve_default=False,
         ),
         migrations.AddField(
