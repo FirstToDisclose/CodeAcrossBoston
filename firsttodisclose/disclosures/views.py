@@ -29,9 +29,6 @@ def agreements(request):
 def disclosure(request):
         return render_to_response("disclosure.html", None, RequestContext(request))
 
-def search(request):
-        return render_to_response("search.html", None, RequestContext(request))
-
 def tag(request):
         return render_to_response("tag.html", None, RequestContext(request))
 

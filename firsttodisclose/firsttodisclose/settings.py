@@ -7,17 +7,17 @@ https://docs.djangoproject.com/en/1.7/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.7/ref/settings/
 """
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+import dj_database_url
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '7s=4-0btfpi2ctso-u&a1-7_q(z_e2h=z%_=_a92n&9=(7p8jo'
+SECRET_KEY = 'set-to-a-secret'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -75,13 +75,9 @@ WSGI_APPLICATION = 'firsttodisclose.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
+DATABASES = {}
+DATABASES['default'] =  dj_database_url.config()
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
@@ -97,10 +93,23 @@ USE_L10N = True
 USE_TZ = True
 
 
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Allow all host headers
+ALLOWED_HOSTS = ['*']
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = '/'
 
-from local_settings import *
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+try:
+    from local_settings import *
+except:
+    print "No local settings or error loading"

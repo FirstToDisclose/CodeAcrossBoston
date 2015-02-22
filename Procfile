@@ -1,0 +1,1 @@
+wed: sh -c 'cd ./firsttodisclose && exec gunicorn firsttodisclose.wsgi --log-file -'

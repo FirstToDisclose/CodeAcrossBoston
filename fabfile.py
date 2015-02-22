@@ -18,6 +18,9 @@ def venv():
         run("virtualenv /home/vagrant/venv")
         run("/home/vagrant/venv/bin/pip install -r requirements.txt")
 
+def reqs():
+    run("/home/vagrant/venv/bin/pip install -r /vagrant/requirements.txt")
+
 def manage(cmd):
     python = "/home/vagrant/venv/bin/python"
     with cd("/vagrant/firsttodisclose"):
