@@ -4,7 +4,7 @@ This project is about enabling idea flow by making it easy to disclose, find, us
 
 * Current Prototype: [http://www.FirstToDisclose.net](http://www.FirstToDisclose.net) 
 
-* For More Information, See: [http://firsttodisclose.info](http://firsttodisclose.info) and [https://law.mit.edu/FirstToDisclose](https://law.mit.edu/FirstToDisclose)
+* For More Information, See: [http://FirsTtoDisclose.info](http://firsttodisclose.info) and [https://law.mit.edu/FirstToDisclose](https://law.mit.edu/FirstToDisclose)
 
 This project is intended to enable people to publicly share their inventions without risking that another person will later get a patent that excludes open, public free use of the invention.  But the basic idea can also work very well for sharing other types of inventions and other innovations that are less heavy-weight than a patent-track invention but are also valuable and important.  For instance, groups like Code for America and university researchers can use this service to disclose and share open source projects in  way that can be discovered and used and improved by others.  
 
