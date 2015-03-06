@@ -1,7 +1,7 @@
 # Overview
 
 This project is about enabling idea flow by making it easy to disclose, find, use and improve inventions and other innovations.  
-
+* Project Information at: [http://www.FirstToDisclose.info](http://www.FirstToDisclose.info) 
 * Current Prototype: [http://www.FirstToDisclose.net](http://www.FirstToDisclose.net) 
 
 * For More Information, See: the [project background site](http://firsttodisclose.info) and the [MIT project page](https://law.mit.edu/FirstToDisclose)
