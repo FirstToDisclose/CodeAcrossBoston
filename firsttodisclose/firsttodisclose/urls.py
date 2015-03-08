@@ -10,7 +10,7 @@ from disclosures.views import show_disclosure
 
 
 urlpatterns = patterns('',
-    url(r'^$', index),
+    url(r'^$', index, name='home'),
 
     url(r'^search$', search, name='search'),
     url(r'^disclosure/(?P<pk>\d+)$', show_disclosure, name='disclose'),
@@ -21,6 +21,7 @@ urlpatterns = patterns('',
 
     url(r'^agreements/', agreements, name='agreements'),
     url(r'^disclosure/', disclosure, name='disclosure'),
+    url(r'^disclosure_post/', disclosure, name='disclosure_post'),
     url(r'^tag/', tag, name='tag'),
 
     url('^accounts/', include('django.contrib.auth.urls')),
