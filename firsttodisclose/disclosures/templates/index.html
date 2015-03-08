@@ -39,10 +39,10 @@ active
     see <a href="http://firsttodisclose.info/">firsttodisclose.info</a></p>
 
   <h5 class="buttonDescription">Show me what other people have disclosed</h5>
-  <button id="discoverButton" class="btn btn-default">Discover</button>
+  <a href="{% url 'search' %}" id="discoverButton" class="btn btn-default">Search</a>
 
   <h5 class="buttonDescription">I want to share my project</h5>
-  <button id="discloseButton" class="btn btn-default">Disclose</button>
+  <a href="{% url 'disclosure' %}" id="discloseButton" class="btn btn-default">Disclose</a>
 
   <h1 id="disclaimerHeader">Disclaimer</h1>
   <p class="paragraphText" id="disclaimerText">If your intention is to file a patent on your idea, use this site cautiously and consult a patent attorney. You should consult a patent attorney regarding any patent related matters including whether submitting a disclosure through FirstToDisclose.net is appropriate for your situation. The law regarding the effect and extent of public disclosure on your ability to get a U.S. patent is unsettled. Additionally, public disclosure might bar you from obtaining a patent in certain foreign jurisdictions. FirstToDisclose.net does not warrant or make any claims to help a user obtain a patent.</p>
