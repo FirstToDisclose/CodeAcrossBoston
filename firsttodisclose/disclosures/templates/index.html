@@ -9,9 +9,11 @@ active
 {% block body %}
 
 </head>
+
 <body>
 
-  <img src="" class="" alt="" src="{% static "images/logo.png" %}" id="mainLogo"/>
+  <img src="" class="" alt="" src="{% static "images/logo.png" %}" id="mainLogo">
+{% if user.is_anonymous %}
   <p class="paragraphText">
     <a href="http://firsttodisclose.net/">FirstToDisclose.net</a> is a
     community-powered online repository for inventors to
@@ -24,7 +26,7 @@ active
     commercialization of intellectual property in our
     information economy, we also applaud those who are
     willing to make their innovations open to the public
-    without charge.
+    without charge.    
   </p>
 
   <p class="paragraphText">
@@ -42,15 +44,29 @@ active
   <a href="{% url 'search' %}" id="discoverButton" class="btn btn-default">Search</a>
 
   <h5 class="buttonDescription">I want to share my project</h5>
+
   <a href="{% url 'disclosure' %}" id="discloseButton" class="btn btn-default">Disclose</a>
+
+
+  {% else %}
+
+  
+
 
   <h1 id="disclaimerHeader">Disclaimer</h1>
   <p class="paragraphText" id="disclaimerText">If your intention is to file a patent on your idea, use this site cautiously and consult a patent attorney. You should consult a patent attorney regarding any patent related matters including whether submitting a disclosure through FirstToDisclose.net is appropriate for your situation. The law regarding the effect and extent of public disclosure on your ability to get a U.S. patent is unsettled. Additionally, public disclosure might bar you from obtaining a patent in certain foreign jurisdictions. FirstToDisclose.net does not warrant or make any claims to help a user obtain a patent.</p>
   <div id="consentWrapper">
     <h5>By checking this box, I agree to this agreement.</h5>
-    <input type="checkbox" id="disclaimerCheckbox">
+    <form action="/go-here/" method="post">
+    {% csrf_token %}
+        <input type="checkbox" id="disclaimerCheckbox">
+        <!-- <input type="submit" value="I Agree"> -->
+    </form>
+    
+    <a href="{% url 'disclosure' %}"><button>I Agree</button> </a>
   </div>
 
+  {% endif %}
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript" src="{% static "javascript/javascript.js" %}"></script>
