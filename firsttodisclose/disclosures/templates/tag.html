@@ -6,4 +6,43 @@
 
 <h1>Tag</h1>
 
+<p>Apply a folksonomy to your disclosure.
+</p>
+
+<p>Sample QnA for FirstToDisclose </p> 
+
+<p>
+
+Q(1): Does your idea relate to programming languages?
+A: Yes.
+	Q(1.1): What programming language(s)?
+	A: Python
+		DOC(1.1.1): Python 
+		Q(1.1.1):GOTO:2
+	A: Java
+		DOC(1.1.2): Java 
+		Q(1.1.2):GOTO:2
+	A: Others
+		Q(1.1.3): What other languages then?
+		X:mylanguage
+			DOC(1.1.3.1): <x>mylanguage</x>
+			Q(1.1.3.1):Got it. <x>mylanguage</x>, right?
+			A: Yes
+				Q(1.1.3.1.1):GOTO:2
+			A: No
+				Q(1.1.3.1.2):GOTO:1.1.3.1
+A: No.
+	Q(1.2):GOTO:2
+Q(2): Does your idea relate to Mobile or Web?
+A: Yes.
+	Q(2.1):GOTO:3
+A: No.
+	Q(2.2):GOTO:3
+
+Q(3): Thanks for sharing your idea! Have a nice day.
+
+A[javascript:save2('user inputs.txt', doc());]: Save your answers.
+
+</p>
+
 {% endblock %}
