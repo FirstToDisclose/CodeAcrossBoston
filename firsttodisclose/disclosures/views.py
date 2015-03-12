@@ -63,7 +63,7 @@ def disclosure(request):
                 new_disclosure.body = disclosure.cleaned_data.get("body", None)
                 new_disclosure.body_file = disclosure.cleaned_data.get("body_file", None)
                 new_disclosure.owner = User.objects.all()[0]
-
+                
                 new_disclosure.save()
                 disclosure_id = new_disclosure.id
                 # 
